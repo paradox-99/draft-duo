@@ -1,2 +1,3 @@
 # DraftDuo
 
+## A writing tool
