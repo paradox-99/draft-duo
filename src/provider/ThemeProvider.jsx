@@ -16,13 +16,12 @@ const ThemeProvider = ({ children }) => {
 
     return (
         <ThemeContext.Provider value={value}>
-            {/* <ThemeProvider theme={colorMode}> */}
                 {children}
-            {/* </ThemeProvider> */}
         </ThemeContext.Provider>
     )
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useThemeContext = () => {
     return useContext(ThemeContext);
   };

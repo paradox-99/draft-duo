@@ -1,29 +1,15 @@
-import { Box, CssBaseline, IconButton, ThemeProvider } from "@mui/material";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 import { useThemeContext } from "./provider/ThemeProvider";
-import { MdDarkMode, MdLightMode  } from "react-icons/md";
+import Root from "./components/root/Root";
 
 const App = () => {
 
-  const { theme, mode, toggleColorMode } = useThemeContext();
+  const { theme } = useThemeContext();
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "end",
-          bgcolor: "background.default",
-          color: "text.primary",
-          p: 2,
-          width: "full"
-        }}
-      >
-        <IconButton sx={{ ml: 1 }} onClick={toggleColorMode} color="inherit">
-          {mode === "dark" ? <MdLightMode /> : <MdDarkMode />}
-        </IconButton>
-      </Box>
+      <Root/>
     </ThemeProvider>
   );
 };

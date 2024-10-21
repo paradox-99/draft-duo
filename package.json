@@ -14,6 +14,7 @@
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.20",
     "axios": "^1.7.2",
+    "draft-duo": "file:",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "prop-types": "^15.8.1",
